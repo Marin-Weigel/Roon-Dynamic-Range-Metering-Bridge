@@ -62,3 +62,6 @@ While still in the repository's search field consecutively enter and install:
 ***japa***
 
 Exit the software repository.
+
+
+**I'm in the process of still editing this, so be patient...**
