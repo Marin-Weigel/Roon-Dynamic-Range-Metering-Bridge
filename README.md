@@ -2,8 +2,8 @@
 **Instructions on how to set up a Raspberry Pi as a groupable RAAT endpoint to display peak-hold spectrum, stereo correlation and VU bars, as well as a EBU-128 conform dynamic range dislay.**
 
 ***CAVEAT:***
-*I've set-up and tested this on a RPi3B+ with Raspbian GNU/Linux 11 (bullseye), so can't really say if any other model/OS-version will work as described.
-This guide assumes basic knowledge on how to navigate RPi desktop menus and accessories like "Add/Remove Software", as well as using the terminal window to use the editor "Nano" to change some config files.*
+*I've set-up and tested this on a RPi3B+ with Raspbian GNU/Linux 11 (bullseye), so it'll need adaptions for any other model/OS-version to work as described.
+This guide also assumes basic knowledge on how to navigate and use RPi desktop menus, accessories like "Add/Remove Software", terminal window and the editor "Nano" to create and adapt some config files.*
 
 Download and flash RaspberryPi OS desktop 32-bit with either Raspberry Pi Imager or Balena Etcher, read instructions for first set-up to finally boot to the RPi desktop environment.
 
