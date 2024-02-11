@@ -54,7 +54,7 @@ While still in the terminal window, enter the following to **configure the loopb
 
 ***sudo nano /home/pi/.jackdrc***
 
-In Nano editor add the line:
+In Nano editor, add the line:
 
 ***/usr/bin/jackd -dalsa -r44100 -p4096 -n2 -S -D -Chw:Loopback -Phw:Loopback***
 
@@ -66,7 +66,7 @@ While still in the terminal window, enter the following to **set up a script to 
 
 ***sudo nano /home/pi/output-monitor.sh***
 
-In Nano editor add lines:
+In Nano editor, add lines:
 
 ***#!/bin/bash***
 
@@ -112,7 +112,7 @@ While still in the terminal window, enter the following to **turn the RPi PCB st
 
 ***sudo nano /boot/cofig.txt***
 
-In Nano editor add lines:
+In Nano editor, add lines:
 
 ***#Turn off Power LED***
 
