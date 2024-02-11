@@ -206,7 +206,7 @@ If everything went well and the grouped zone with the RPi is currently streaming
 
 ...
 
-"Japa" needs some preliminary configuring to show a spectrogram, so set it up like in the screenshot, but feel free to adjust to your liking:
+"Japa" needs to be configured first to show a spectrogram, so set it up like in the screenshot, but feel free to adjust to your liking:
 
 ![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/d131f5c4-9df1-4842-845a-a1d6fb926756)
 
