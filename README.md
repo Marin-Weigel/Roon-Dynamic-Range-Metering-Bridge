@@ -7,7 +7,7 @@ This guide also assumes basic knowledge on how to navigate and use RPi desktop m
 
 ...
 
-Download and flash RaspberryPi OS desktop 32-bit with either Raspberry Pi Imager or Balena Etcher, and read relevant instructions for first set-up to finally boot to the RPi desktop environment.
+Download and flash RaspberryPi OS desktop 32-bit with either Raspberry Pi Imager or Balena Etcher, and read relevant instructions for first set up to finally boot to the RPi desktop environment.
 
 Make sure to set your wired/wireless network to be on the same subnet as your Roon server and remotes, and don't keep both connected at the same time to avoid networking issues.
 
