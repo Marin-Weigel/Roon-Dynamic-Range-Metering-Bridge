@@ -62,7 +62,7 @@ Save and exit the file.
 
 ...
 
-While still in the terminal window, enter the following to **set up a script to detect active Roon streaming status in order to turn the RPi touch screen on and off**:
+While still in the terminal window, enter the following to **set up a script to detect active Roon streaming status in order to automatically turn the RPi touch screen on and off**:
 
 ***sudo nano /home/pi/output-monitor.sh***
 
