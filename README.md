@@ -13,7 +13,7 @@ Make sure to set your wired/wireless network to be on the same subnet as your Ro
 
 ...
 
-Attach a keyboard and mouse to the RPi.
+Attach a keyboard and mouse to the RPi while setting things up.
 
 Navigate the desktop menu to "Accessories" and open a "Terminal" window.
 
