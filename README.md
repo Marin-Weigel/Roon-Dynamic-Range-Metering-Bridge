@@ -234,6 +234,4 @@ The screen should turn off now if you "Stop" Roon's stream, and turn back on whe
 
 ...
 
-**There might still be quirks, omissions and faults in the guide, as I'm working from memory and my sketchy notes, so feel free to PM me via Roon's forum**
-
-**GOOD LUCK AND HAVE FUN!**
+**There might still be quirks, omissions and faults in the guide, as I'm working from memory and my sketchy notes, so feel free to PM me via Roon's forum - GOOD LUCK AND HAVE FUN!**
