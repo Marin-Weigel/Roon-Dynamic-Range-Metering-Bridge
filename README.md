@@ -17,7 +17,7 @@ Navigate the desktop menu to "Accessories" and open a "Terminal" window.
 
 ...
 
-In the terminal window, enter each of the following lines, followed by entering return to **install Roon's bridge software**:
+In the terminal window, enter each of the following lines, followed by return to **install Roon's bridge software**:
 
 ***curl -O https://download.roonlabs.net/builds/roonbridge-installer-linuxarmv7hf.sh***
 
