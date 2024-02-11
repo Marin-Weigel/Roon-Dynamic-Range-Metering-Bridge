@@ -27,7 +27,7 @@ In the terminal window, enter each of the following lines, followed by return to
 
 ...
 
-Still in the terminal window, enter the following to **set up the loopback sound device**:
+Still in the terminal window, enter the following to **set up a loopback sound device**:
 
 ***sudo nano /etc/rc.local***
 
