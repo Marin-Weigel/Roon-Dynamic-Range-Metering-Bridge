@@ -17,8 +17,7 @@ Attach a keyboard and mouse to the RPi, navigate the desktop menu to "Accessorie
 
 ***sudo ./roonbridge-installer-linuxarmv7hf.sh***
 
-
-**In the terminal window, enter the following to set up the loopback sound device:**
+**Still in the terminal window, enter the following to set up the loopback sound device:**
 
 ***sudo nano /etc/rc.local***
 
