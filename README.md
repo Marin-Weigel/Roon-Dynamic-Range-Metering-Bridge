@@ -62,7 +62,7 @@ Save and exit the file.
 
 ...
 
-While still in the terminal window, we need to **set up a script to detect active Roon streaming status to turn the RPi touch screen on and off**, so enter:
+While still in the terminal window, enter the following to **set up a script to detect active Roon streaming status in order to turn the RPi touch screen on and off**:
 
 ***sudo nano /home/pi/output-monitor.sh***
 
@@ -122,7 +122,7 @@ While still in the terminal window, enter the following if you want to **change 
 
 ***sudo nano /sys/class/backlight/10-0045/brightness***
 
-In Nano editor, change the shown value from between 0 to 255 to adjust the brightness to your liking, then save and exit the file.
+In Nano editor, change the shown value from between 0 to 255 to adjust the brightness, then save and exit the file.
 
 ...
 
@@ -148,16 +148,68 @@ Navigate the desktop menu to "Logout", then click "Reboot".
 
 ...
 
-When the RPi is back up and running, check Roon's "Settings", "Audio", find the RPi with its loopback devices and activate the second one of those. Roon should now have added a new zone for it, which you could group with any other RAAT zone.
-
-navigate the desktop menu to "Accessories", open a "Terminal" window and enter:
-
-
+When the RPi is back up and running, check Roon's "Settings", "Audio", find the RPi with its loopback devices and activate the second one of them. Roon should now have added a new zone for it, which you could group with any other RAAT zone.
 
 ...
 
-In the terminal window, enter each of the following lines, followed by return to set up your metering screen:
+Navigate the desktop menu to "Accessories", open a "Terminal" window and enter:
 
+***qjackctl &***
 
+Click "Setup" in the "Jack Audio Connection Kit" window.
 
-**I'm in the process of still editing this, so be patient...**
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/e4fba088-23cf-4bba-8936-7033b45b41ae)
+
+Check "Settings", "Parameters".
+
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/86654131-4aa0-4823-b51c-02fd28b6f435)
+
+Check "Settings", "Advanced".
+
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/da0ff576-7be0-44bc-b479-8253d16210ab)
+
+Check "Misc".
+
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/2c84b2ec-a517-4ebd-9b06-602b7f5f1705)
+
+...
+
+Navigate the desktop menu to "Sound&Video" to start "Ebumeter", "Japa (with JACK support)" and "Jkmeter"
+
+...
+
+Click "Connect" in the "Jack Audio Connection Kit" window and set up the  connections as shown:
+
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/3529696f-1b7f-4d63-a9ec-8363551050ff)
+
+...
+
+If everything went well and the grouped zone with the RPi is currently streaming music, you should see some action already ...
+
+...
+
+"Japa" needs some configuring to show a spectrogram, so set it up like this, but feel free to adjust to your liking:
+
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/d131f5c4-9df1-4842-845a-a1d6fb926756)
+
+...
+
+Now it's up to your imagination to "Undecorate", "Move", "Size" and "Layer" the individual windows as you like, although not all options are available for all windows. You might also want to set "Panel preferences" to hide the task bar ...
+
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/9bec2805-f01b-45e4-b8ef-a8260f831e0e)
+
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/adb5d833-e983-4ebc-b605-99b2a0bd9e8d)
+
+Here's my layout suggestion:
+
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/d01b02dc-2602-48cc-8b2e-c54fff648473)
+
+...
+
+Finally, back in the terminal window, enter the following line to activate automatic screen turn-on/turn-off:
+
+***./output-monitor.sh &***
+
+**There might still be quirks, omissions and faults in the guide, as I'm working from memory and my sketchy notes, so feel free to PM me via Roon's forum**
+
+**GOOD LUCK AND HAVE FUN!**
