@@ -166,7 +166,7 @@ Navigate the desktop menu to "Logout", then click "Reboot".
 
 ...
 
-When the RPi is back up and running, check Roon's "Settings", "Audio", find the RPi with its loopback devices and activate the second one of them (which works for me). Roon should now have added a new zone for it, which you can now group with your music system's RAAT zone.
+When the RPi is back up and running, check Roon's "Settings", "Audio", find the RPi with its loopback devices and activate the second one of them (which works for me). Now, Roon should have added a new zone for it, which you can group with your music system's RAAT zone.
 
 ...
 
