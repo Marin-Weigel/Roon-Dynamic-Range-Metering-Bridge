@@ -9,6 +9,8 @@ This guide also assumes basic knowledge on how to navigate and use RPi desktop m
 
 Download and flash RaspberryPi OS desktop 32-bit with either Raspberry Pi Imager or Balena Etcher, and read relevant instructions for first set-up to finally boot to the RPi desktop environment.
 
+Make sure to set your wired/wireless network to be on the same subnet as your Roon server and remotes, and don't keep both connected at the same time to avoid networking issues.
+
 ...
 
 Attach a keyboard and mouse to the RPi.
@@ -94,6 +96,36 @@ Save and exit the file.
 
 ...
 
+While still in the terminal window, enter the following to **turn the RPi PCB status LEDs off**:
+
+***sudo nano /boot/cofig.txt***
+
+In Nano editor add lines:
+
+***#Turn off Power LED***
+
+***dtparam=pwr_led_trigger=default-on***
+
+***dtparam=pwr_led_activelow=off***
+
+***#Turn off Activity LED***
+
+***dtparam=act_led_trigger=none***
+
+***dtparam=act_led_activelow=off***
+
+Save and exit the file.
+
+...
+
+While still in the terminal window, enter the following if you want to **change the RPi touch screen backlight brightness**:
+
+***sudo nano /sys/class/backlight/10-0045/brightness***
+
+In Nano editor, change the shown value from between 0 to 255 to adjust the brightness to your liking, then save and exit the file.
+
+...
+
 Navigate the desktop menu to "Preferences" and click "Add/Remove Software".
 
 To find and then **install the Jack sound server user interface and the meters**, consecutively type and "Apply" following entries in the repository search field:
@@ -109,6 +141,22 @@ To find and then **install the Jack sound server user interface and the meters**
 When done, exit the software repository.
 
 ...
+
+**Now it's time to reboot the Raspberry Pi to activate the changes**:
+
+Navigate the desktop menu to "Logout", then click "Reboot".
+
+...
+
+When the RPi is back up and running, check Roon's "Settings", "Audio", find the RPi with its loopback devices and activate the second one of those. Roon should now have added a new zone for it, which you could group with any other RAAT zone.
+
+navigate the desktop menu to "Accessories", open a "Terminal" window and enter:
+
+
+
+...
+
+In the terminal window, enter each of the following lines, followed by return to set up your metering screen:
 
 
 
