@@ -33,7 +33,7 @@ Still in the terminal window, enter the following to **set up a loopback sound d
 
 ***sudo nano /etc/rc.local***
 
-In Nano editor add the line:
+In Nano editor, add the line:
 
 ***sudo modprobe snd-aloop***
 
