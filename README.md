@@ -5,11 +5,19 @@
 *I've set-up and tested this on a RPi3B+ with Raspbian GNU/Linux 11 (bullseye), so it'll need adaptions for any other model/OS-version to work as described.
 This guide also assumes basic knowledge on how to navigate and use RPi desktop menus, accessories like "Add/Remove Software", terminal window and the editor "Nano" to create and adapt some config files.*
 
-Download and flash RaspberryPi OS desktop 32-bit with either Raspberry Pi Imager or Balena Etcher, read instructions for first set-up to finally boot to the RPi desktop environment.
+...
 
-Attach a keyboard and mouse to the RPi, navigate the desktop menu to "Accessories" to open a "Terminal" window.
+Download and flash RaspberryPi OS desktop 32-bit with either Raspberry Pi Imager or Balena Etcher, read relevant instructions for first set-up to finally boot to the RPi desktop environment.
 
-**In the terminal window, enter each of the following lines, followed by entering return to install Roon's bridge software:**
+...
+
+Attach a keyboard and mouse to the RPi.
+
+Navigate the desktop menu to "Accessories" and open a "Terminal" window.
+
+...
+
+In the terminal window, enter each of the following lines, followed by entering return to **install Roon's bridge software**:
 
 ***curl -O https://download.roonlabs.net/builds/roonbridge-installer-linuxarmv7hf.sh***
 
@@ -17,7 +25,9 @@ Attach a keyboard and mouse to the RPi, navigate the desktop menu to "Accessorie
 
 ***sudo ./roonbridge-installer-linuxarmv7hf.sh***
 
-**Still in the terminal window, enter the following to set up the loopback sound device:**
+...
+
+Still in the terminal window, enter the following to **set up the loopback sound device**:
 
 ***sudo nano /etc/rc.local***
 
@@ -35,7 +45,10 @@ and
 
 Save and exit the file.
 
-**While still in the terminal window, enter the following to configure the loopback sound device:**
+...
+
+
+While still in the terminal window, enter the following to **configure the loopback sound device**:
 
 ***sudo nano /home/pi/.jackdrc***
 
@@ -45,15 +58,17 @@ In Nano editor add the line:
 
 Save and exit the file.
 
-Navigate the desktop menu to "Preferences" and click "Add/Remove Software"
+...
 
-In the repository's search field enter:
+Navigate the desktop menu to "Preferences" and click "Add/Remove Software".
+
+To find and then **install the Jack sound server user interface** in the repository search field, enter:
 
 ***qjackctl***
 
-to find and then install the Jack sound server user interface via "Apply".
+When found, check the box and install via "Apply".
 
-While still in the repository's search field consecutively enter and install:
+To **install the meters**, consecutively type and "Apply" following entries in the repository search field:
 
 ***jkmeter***
 
@@ -61,7 +76,10 @@ While still in the repository's search field consecutively enter and install:
 
 ***japa***
 
-Exit the software repository.
+When done, exit the software repository.
+
+...
+
 
 
 **I'm in the process of still editing this, so be patient...**
