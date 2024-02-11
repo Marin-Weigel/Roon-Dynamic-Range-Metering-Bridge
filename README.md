@@ -212,7 +212,7 @@ If everything went well and the grouped zone with the RPi is currently streaming
 
 ...
 
-Now it's up to your imagination to "Undecorate", "Move", "Size" and "Layer" the individual windows as you like, although not all options are available for all windows.
+Now it's up to your imagination to "Undecorate", "Move", "Size" and "Layer" the individual windows as you like by right-clicking on their edges, although not all options are available for all windows.
 
 ![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/9bec2805-f01b-45e4-b8ef-a8260f831e0e)
 
