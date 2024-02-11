@@ -11,9 +11,11 @@ Attach a keyboard and mouse to the RPi, navigate the desktop menu to "Accessorie
 
 **In the terminal window, enter each of the following lines, followed by entering return to install Roon's bridge software:**
 
-***$ curl -O https://download.roonlabs.net/builds/roonbridge-installer-linuxarmv7hf.sh
-$ chmod +x roonbridge-installer-linuxarmv7hf.sh
-$ sudo ./roonbridge-installer-linuxarmv7hf.sh***
+***$ curl -O https://download.roonlabs.net/builds/roonbridge-installer-linuxarmv7hf.sh***
+
+***$ chmod +x roonbridge-installer-linuxarmv7hf.sh***
+
+***$ sudo ./roonbridge-installer-linuxarmv7hf.sh***
 
 
 **In the terminal window, enter the following to set up the loopback sound device:**
