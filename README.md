@@ -94,6 +94,18 @@ In Nano editor add lines:
 
 Save and exit the file.
 
+***ATTENTION: You might have a different loopback set up, so might need to adapt loopback parameters above!***
+
+***Following test only works with Roon already being able to stream to the loopback device.***
+
+***Here's my configuration***
+
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/0898c72b-f06b-4102-9ece-26de35403cf3)
+
+***And here's the terminal response for the streaming status for the correct loopback output***
+
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/5cd23c96-8e06-4d13-b0cd-6db26bf2d1d6)
+
 ...
 
 While still in the terminal window, enter the following to **turn the RPi PCB status LEDs off**:
@@ -124,11 +136,17 @@ While still in the terminal window, enter the following if you want to **change 
 
 In Nano editor, change the shown value from between 0 to 255 to adjust the brightness, then save and exit the file.
 
+***ATTENTION: You might have a different backlight set up, so might need to adapt parameters above!***
+
+***Here's my configuration***
+
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/2ac53215-3898-4376-9d0f-e529256c2065)
+
 ...
 
 Navigate the desktop menu to "Preferences" and click "Add/Remove Software".
 
-To find and then **install the Jack sound server user interface and the meters**, consecutively type and "Apply" following entries in the repository search field:
+To find and then **install the Jack sound server user interface and the meters**, consecutively type following entries in the repository search field, wait for the result followed by clicking "Apply" and waiting for execution:
 
 ***qjackctl***
 
@@ -148,7 +166,7 @@ Navigate the desktop menu to "Logout", then click "Reboot".
 
 ...
 
-When the RPi is back up and running, check Roon's "Settings", "Audio", find the RPi with its loopback devices and activate the second one of them. Roon should now have added a new zone for it, which you could group with any other RAAT zone.
+When the RPi is back up and running, check Roon's "Settings", "Audio", find the RPi with its loopback devices and activate the second one of them. Roon should now have added a new zone for it, which you can now group with your music system's RAAT zone.
 
 ...
 
@@ -160,25 +178,25 @@ Click "Setup" in the "Jack Audio Connection Kit" window.
 
 ![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/e4fba088-23cf-4bba-8936-7033b45b41ae)
 
-Check "Settings", "Parameters".
+Check, adjust and save if needed, "Settings", "Parameters" as in screenshot.
 
 ![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/86654131-4aa0-4823-b51c-02fd28b6f435)
 
-Check "Settings", "Advanced".
+Check, adjust and save if needed, "Settings", "Advanced" as in screenshot.
 
 ![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/da0ff576-7be0-44bc-b479-8253d16210ab)
 
-Check "Misc".
+Check, adjust and save if needed, "Misc" as in screenshot.
 
 ![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/2c84b2ec-a517-4ebd-9b06-602b7f5f1705)
 
 ...
 
-Navigate the desktop menu to "Sound&Video" to start "Ebumeter", "Japa (with JACK support)" and "Jkmeter"
+Navigate the desktop menu to "Sound&Video" and start "Ebumeter", "Japa (with JACK support)" and "Jkmeter".
 
 ...
 
-Click "Connect" in the "Jack Audio Connection Kit" window and set up the  connections as shown:
+Click "Connect" in the "Jack Audio Connection Kit" window and set up the connections as shown:
 
 ![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/3529696f-1b7f-4d63-a9ec-8363551050ff)
 
@@ -188,27 +206,33 @@ If everything went well and the grouped zone with the RPi is currently streaming
 
 ...
 
-"Japa" needs some configuring to show a spectrogram, so set it up like this, but feel free to adjust to your liking:
+"Japa" needs some preliminary configuring to show a spectrogram, so set it up like in the screenshot, but feel free to adjust to your liking:
 
 ![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/d131f5c4-9df1-4842-845a-a1d6fb926756)
 
 ...
 
-Now it's up to your imagination to "Undecorate", "Move", "Size" and "Layer" the individual windows as you like, although not all options are available for all windows. You might also want to set "Panel preferences" to hide the task bar ...
+Now it's up to your imagination to "Undecorate", "Move", "Size" and "Layer" the individual windows as you like, although not all options are available for all windows.
 
 ![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/9bec2805-f01b-45e4-b8ef-a8260f831e0e)
 
+You might also want to set "Panel preferences" to hide the task bar ...
+ 
 ![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/adb5d833-e983-4ebc-b605-99b2a0bd9e8d)
 
-Here's my layout suggestion:
+Here's my layout:
 
 ![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/d01b02dc-2602-48cc-8b2e-c54fff648473)
 
 ...
 
-Finally, back in the terminal window, enter the following line to activate automatic screen turn-on/turn-off:
+Finally, back in the terminal window, (likely after entering "ctrl c" to get a prompt) enter the following line to activate automatic screen turn-on/turn-off:
 
 ***./output-monitor.sh &***
+
+The screen should turn off now if you "Stop" Roon's stream, and turn back on when starting it -  it will stay on when pausing, though.
+
+...
 
 **There might still be quirks, omissions and faults in the guide, as I'm working from memory and my sketchy notes, so feel free to PM me via Roon's forum**
 
