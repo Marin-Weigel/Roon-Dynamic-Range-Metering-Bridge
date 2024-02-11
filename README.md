@@ -96,13 +96,9 @@ Save and exit the file.
 
 Navigate the desktop menu to "Preferences" and click "Add/Remove Software".
 
-To find and then **install the Jack sound server user interface** in the repository search field, enter:
+To find and then **install the Jack sound server user interface and the meters**, consecutively type and "Apply" following entries in the repository search field:
 
 ***qjackctl***
-
-When found, check the box and install via "Apply".
-
-To **install the meters**, consecutively type and "Apply" following entries in the repository search field:
 
 ***jkmeter***
 
