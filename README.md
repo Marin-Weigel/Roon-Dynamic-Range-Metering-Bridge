@@ -74,7 +74,7 @@ In Nano editor add lines:
 
 ***do***
 
-***content=`cat $DIR`***
+***content='cat $DIR'***
 
 ***if [[ "$content" != 'closed' ]]; then***
 
