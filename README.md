@@ -60,6 +60,40 @@ Save and exit the file.
 
 ...
 
+While still in the terminal window, we need to **set up a script to detect active Roon streaming status to turn the RPi touch screen on and off**, so enter:
+
+***sudo nano /home/pi/output-monitor.sh***
+
+In Nano editor add lines:
+
+***#!/bin/bash***
+
+***DIR='/proc/asound/Loopback/pcm1p/sub0/status'***
+
+***while :***
+
+***do***
+
+***content=`cat $DIR`***
+
+***if [[ "$content" != 'closed' ]]; then***
+
+***xset s reset -dpms***
+
+***elif [[ "$content" == 'closed' ]]; then***
+
+***xset s blank dpms 1 1 0***
+
+***fi***
+
+***sleep 1***
+
+***done***
+
+Save and exit the file.
+
+...
+
 Navigate the desktop menu to "Preferences" and click "Add/Remove Software".
 
 To find and then **install the Jack sound server user interface** in the repository search field, enter:
