@@ -1,5 +1,5 @@
 # Roon-Metering-Bridge
-**Instructions on how to set up a Raspberry Pi as a groupable RAAT endpoint to display peak-hold spectrum, stereo correlation and VU bars, as well as a dynamic range dislay conforming to EBU-128.**
+**Instructions on how to set up a Raspberry Pi 3B+ as a groupable RAAT endpoint to display peak-hold spectrum, stereo correlation and VU bars, as well as a dynamic range dislay conforming to EBU-128.**
 
 ***CAVEAT:***
 *I've set this up and tested it on a RPi3B+ with Raspbian GNU/Linux 11 (bullseye), so it'll likely need adaptions here and there to work for any other model/RPi-OS version.
