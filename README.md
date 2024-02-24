@@ -1,4 +1,4 @@
-# Roon-Metering-Bridge
+# Roon-Metering-Bridge for RPi5 (8GB)
 **Instructions on how to set up a Raspberry Pi 5 as a groupable RAAT endpoint to display peak-hold spectrum, stereo correlation and VU bars, as well as a dynamic range dislay conforming to EBU-128.**
 
 ***CAVEAT:***
