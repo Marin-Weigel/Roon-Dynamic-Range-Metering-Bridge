@@ -204,7 +204,7 @@ Now it's up to your imagination to move and resize the individual windows.
 
 Here's my layout:
 
-![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/d01b02dc-2602-48cc-8b2e-c54fff648473)
+![image](https://github.com/Marin-Weigel/Roon-Dynamic-Range-Metering-Bridge/assets/108012806/99fdabd6-e02c-42f5-bee9-41ca5d7405db)
 
 ...
 
